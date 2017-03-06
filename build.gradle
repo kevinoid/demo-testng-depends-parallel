@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'org.testng:testng:6.11'
+}
+
+test.useTestNG() {
+    suites 'src/test/resources/testng.xml'
+}
